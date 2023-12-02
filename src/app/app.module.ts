@@ -11,6 +11,8 @@ import { AppRoutingModule } from "./app.routing";
 import { ComponentsModule } from "./components/components.module";
 import { LocationStrategy, PathLocationStrategy } from "@angular/common";
 import { HomeLayoutComponent } from "./home/home-layout/home-layout.component";
+import { ReactiveFormsModule } from "@angular/forms";
+import { LoginComponent } from "./home/views/login/login.component";
 
 @NgModule({
   imports: [
@@ -21,12 +23,14 @@ import { HomeLayoutComponent } from "./home/home-layout/home-layout.component";
     NgbModule,
     RouterModule,
     AppRoutingModule,
+    ReactiveFormsModule,
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
     AuthLayoutComponent,
     HomeLayoutComponent,
+    LoginComponent,
   ],
   providers: [{ provide: LocationStrategy, useClass: PathLocationStrategy }],
   bootstrap: [AppComponent],

@@ -7,6 +7,8 @@ import { AdminLayoutComponent } from "./layouts/admin-layout/admin-layout.compon
 import { AuthLayoutComponent } from "./layouts/auth-layout/auth-layout.component";
 import { HomeLayoutComponent } from "./home/home-layout/home-layout.component";
 import { LayoutEtudiantComponent } from "./layouts/etudiant/layout-etudiant/layout-etudiant.component";
+import { LoginComponent } from "./home/views/login/login.component";
+import { RegisterComponent } from "./home/views/register/register.component";
 
 const routes: Routes = [
   {
@@ -49,7 +51,8 @@ const routes: Routes = [
         (e) => e.EtudiantModule
       ),
   },
-
+  { path: "login", component: LoginComponent },
+  { path: "register", component: RegisterComponent },
   // {
   //   path: "**",
   //   redirectTo: "dashboard",
