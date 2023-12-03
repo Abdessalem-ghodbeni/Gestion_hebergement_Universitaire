@@ -40,4 +40,8 @@ export class NavbarComponent implements OnInit {
     }
     // return "Dashboard";
   }
+  logout(): void {
+    localStorage.clear(); // Supprimer toutes les données du stockage local
+    this.router.navigateByUrl("/home"); // Rediriger vers la page de connexion
+  }
 }

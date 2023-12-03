@@ -22,8 +22,8 @@ export const ROUTES: RouteInfo[] = [
     class: "",
   },
   {
-    path: "tables",
-    title: "Tables",
+    path: "liste_foyer",
+    title: "Liste Foyer",
     icon: "ni-bullet-list-67 text-red",
     class: "",
   },

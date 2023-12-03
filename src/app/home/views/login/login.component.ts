@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
             localStorage.setItem("accessToken", data.accessToken);
             localStorage.setItem("refreshToken", data.refreshToken);
             localStorage.setItem("state", "0");
-            if ((data.userDetails.role = Role.ETUDIANT)) {
+            if (data.userDetails.role === Role.ETUDIANT) {
               this._route.navigateByUrl("/etudiant");
             } else {
               this._route.navigateByUrl("/admin");

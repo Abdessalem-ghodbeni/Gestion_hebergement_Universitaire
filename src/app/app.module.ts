@@ -13,6 +13,7 @@ import { LocationStrategy, PathLocationStrategy } from "@angular/common";
 import { HomeLayoutComponent } from "./home/home-layout/home-layout.component";
 import { ReactiveFormsModule } from "@angular/forms";
 import { LoginComponent } from "./home/views/login/login.component";
+import { ListeFoyerComponent } from "./layouts/admin-layout/views/liste-foyer/liste-foyer.component";
 
 @NgModule({
   imports: [
@@ -31,6 +32,7 @@ import { LoginComponent } from "./home/views/login/login.component";
     AuthLayoutComponent,
     HomeLayoutComponent,
     LoginComponent,
+    ListeFoyerComponent,
   ],
   providers: [{ provide: LocationStrategy, useClass: PathLocationStrategy }],
   bootstrap: [AppComponent],
